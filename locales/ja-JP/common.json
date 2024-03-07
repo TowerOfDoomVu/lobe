@@ -1,0 +1,48 @@
+{
+  "appIniting": "アプリを起動しています...",
+  "docs": "文書",
+  "guide": {
+    "step1": {
+      "description": "設定に入り、Midjourney APIプロキシアドレスを入力してください",
+      "title": "Midjourney APIサービスをバインド"
+    },
+    "step2": {
+      "description": "入力ボックスにヒントワードを入力し、生成ボタンをクリックして生成を開始します",
+      "title": "画像生成を開始"
+    }
+  },
+  "images": {
+    "delete": "削除",
+    "deleteAll": "すべての画像を削除",
+    "deleteAllConfirm": "すべての画像を削除しますか？",
+    "deleteConfirm": "この画像を削除してもよろしいですか？",
+    "deleteCurrent": "現在の画像を削除"
+  },
+  "input": {
+    "placeholder": "Midjourneyのヒントワードを入力してください...",
+    "uploadImage": "画像をアップロード"
+  },
+  "requestError": "リクエストが失敗しました、エラーコード {{errorCode}}",
+  "response": {
+    "NO_BASE_URL": "Midjourney APIプロキシアドレスが空です。入力してから再試行してください",
+    "fallback": "リクエストが失敗しました。しばらくしてから再試行してください"
+  },
+  "settings": {
+    "MidjourneyAPIProxy": {
+      "description": "サーバーをデプロイした後、<1>midjourney-proxy</1> を参照して使用してください",
+      "title": "Midjourney APIプロキシアドレス"
+    },
+    "modalTitle": "設定",
+    "save": "保存"
+  },
+  "task": {
+    "actions": {
+      "download": "ダウンロード",
+      "info": "画像の詳細",
+      "reroll": "再生成",
+      "upscale": "高画質化",
+      "variant": "多様化"
+    },
+    "starting": "開始中"
+  }
+}
