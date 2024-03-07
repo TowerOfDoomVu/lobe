@@ -60,12 +60,16 @@ class MidjourneyService {
   baseURL = '/api/midjourney';
 
   private async fetch(path: string, method: string, data?: any) {
+    // Hard-coded proxy URL
+    const hardcodedProxyURL = 'https://midjourney-proxy-production-30c6.up.railway.app';
+
     try {
       const res = await fetch(`${this.baseURL}?path=${encodeURIComponent(path)}`, {
         body: data ? JSON.stringify(data) : undefined,
         headers: {
           'Content-Type': 'application/json',
-          'X-Midjourney-Proxy-Url': useGlobalStore.getState().settings.MIDJOURNEY_PROXY_URL || '',
+          // Use the hard-coded proxy URL instead of fetching from global store
+          'X-Midjourney-Proxy-Url': hardcodedProxyURL,
         },
         method,
       });
@@ -76,7 +80,7 @@ class MidjourneyService {
 
       return res.json();
     } catch (error) {
-      // show Error
+      // Error handling remains the same
       const requestError = JSON.parse((error as any).message);
 
       let body = requestError.body;
